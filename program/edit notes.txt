@@ -1,0 +1,22 @@
+NEXT STEPS:
+(manpower update function done)
+(allies done with does_border function)
+(player attack done)
+(testing done)
+(coded in a check to make sure the ID three letters will never be the same)
+(coded computer turns)
+1 - Code a win check
+2 - Polish
+3 - code developer commands as secret commands have -> add_pop, force_ally, annex
+4 - final debug and polish
+5 - Game balance
+6 - Get ideas for version 2 -> nations scores and a score-based victory,
+able to release dead nations, populations rooted in tiles so add on (less manpower from them if non core)
+
+BUG TO FIX:
+Sometimes allies dont update that theyre not in the game anymore for computers
+This is really weird and not obvious
+NARROWED DOWN:
+sometimes when the computer attacks, the indexes are not all checked. there must be a logical flaw in the code for changing indices
+after an invasion somewhere
+ADDITIONALLY these faulty allies can then end up on the allies list twice, causing them to take double losses
